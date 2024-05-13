@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGT Map and Research</title>
+    <style>
+      body {
+    font-family: 'Roboto', sans-serif; /* Using Roboto for a more modern and clean appearance */
+    margin: 0;
+    padding: 0;
+    background: url('./mumbai.jpeg') no-repeat center center fixed; /* Make sure the path to your image is correct */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f0f0f0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.85); /* Slightly darker for better contrast */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.4rem; /* Slightly larger font size for better readability */
+}
+
+.section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Less transparency for better readability */
+    border-radius: 10px; /* Larger border-radius for a softer appearance */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
+    width: 80%;
+    max-width: 960px;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px; /* Slightly more padding for a beefier button */
+    margin: 10px;
+    background-color: #007bff; /* Brighter blue for a more vibrant look */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px; /* Slightly rounded corners */
+    text-align: center;
+    font-weight: bold; /* Bold text for the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px; /* Rounded corners for the iframe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the iframe */
+    border: 1px solid #ccc; /* Adding a light border for definition */
+}
+
+@media (max-width: 768px) {
+    .section, .btn {
+        width: 90%; /* More responsive on smaller screens */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Project!</h1>
+        <p>Explore the interactive map and detailed research paper on Vacant spaces in Mumbai.</p>
+    </header>
+    <div class="section">
+    <h2>View the Map</h2>
+    <iframe src="https://sdmhaske-b22.nextgis.com/resource/27/display/tiny?base=osm-mapnik&lon=72.7937&lat=19.1654&angle=0&zoom=11&styles=8%2C10%2C12%2C14%2C16%2C18%2C20%2C22%2C24%2C26&linkMainMap=true&events=false&panel=none&controls=&panels=" style="overflow:hidden;height:600px;width:800px" height="600" width="800"></iframe>
+</div>
+    <div class="section">
+        <h2>Read the Research Paper</h2>
+        <!-- Embed the PDF file -->
+        <iframe src="IGTProject_Report.pdf"></iframe>
+        <!-- Optionally, provide a direct download link as well -->
+        <a href="IGTProject_Report.pdf" class="btn" download>Download Research Paper</a>
+    </div>
+</body>
+</html>
